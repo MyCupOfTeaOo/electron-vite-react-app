@@ -1,6 +1,6 @@
 {
   "name": "electron-vite-react-app",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "author": "tea",
   "description": "测试electron与vite的example",
   "main": "main.js",

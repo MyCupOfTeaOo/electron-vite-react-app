@@ -24,3 +24,8 @@ ps: `main.ts` 文件改了需要手动重新执行`npm run start:electron`
 ## 提交代码
 
 > 遵循 https://www.conventionalcommits.org/
+> 也可以使用 npm run commit 来格式化提交
+
+## 发布版本
+
+> npm run release

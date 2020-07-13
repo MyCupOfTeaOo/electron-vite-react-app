@@ -6,5 +6,6 @@
 
 ### Features
 
+- 增加 changelog.md ([85939a6](https://github.com/MyCupOfTeaOo/electron-vite-react-app/commit/85939a6b8a3c6a00055128ab6c93eda2d3e29516))
 - **lint:** 增加对 commit 的约束 ([9fd460a](https://github.com/MyCupOfTeaOo/electron-vite-react-app/commit/9fd460a377ffc4ad901e18e42d1967fb253c47d8))
 - 使用 vite.config.ts 替换 vite.config.js ([66eabce](https://github.com/MyCupOfTeaOo/electron-vite-react-app/commit/66eabce87252c6743b6d642f71eaf47c0adb6c3a))

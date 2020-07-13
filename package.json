@@ -55,7 +55,7 @@
   },
   "build": {
     "productName": "demo",
-    "appId": "com.qg.example.electron",
+    "appId": "tea.example.electron",
     "dmg": {
       "contents": [
         {

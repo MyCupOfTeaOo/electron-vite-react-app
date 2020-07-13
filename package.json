@@ -1,0 +1,107 @@
+{
+  "name": "electron-vite-react-app",
+  "version": "0.0.1",
+  "author": "tea",
+  "description": "测试electron与vite的example",
+  "main": "main.js",
+  "scripts": {
+    "start": "concurrently --kill-others \"npm:start:vite\" \"npm:watch:main\"",
+    "start:vite": "vite",
+    "start:electron": "cross-env NODE_ENV=development electron .",
+    "watch:main": "tsc ./main.ts --watch",
+    "build:vite": "vite build --base=",
+    "build:electron": "cross-env NODE_ENV=production tsc ./main.ts && electron-builder",
+    "pack:electron": "cross-env NODE_ENV=production tsc ./main.ts && electron-builder --dir",
+    "build": "npm run build:vite && npm run build:electron",
+    "lint:fix": "eslint --fix --ext .js,.jsx,.ts,.tsx ./src",
+    "lint-staged": "lint-staged",
+    "lint-staged:all": "eslint --ext .js,.jsx,.ts,.tsx ./src",
+    "prettier": "prettier-eslint --write 'src/**/*'"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@pika/react": "^16.13.1",
+    "@pika/react-dom": "^16.13.1",
+    "@types/node": "^12.0.12",
+    "@types/react": "^16.9.43",
+    "@types/react-dom": "^16.9.8",
+    "@typescript-eslint/eslint-plugin": "^3.6.0",
+    "@typescript-eslint/parser": "^3.6.0",
+    "@typescript-eslint/typescript-estree": "^3.6.0",
+    "chokidar": "^3.4.0",
+    "concurrently": "^5.2.0",
+    "cross-env": "^7.0.2",
+    "electron": "^9.1.0",
+    "electron-builder": "^22.7.0",
+    "eslint": "^7.4.0",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-config-airbnb-typescript": "^8.0.2",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jest": "^23.18.0",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-react": "^7.20.3",
+    "eslint-plugin-react-hooks": "^4.0.7",
+    "eslint-plugin-unicorn": "^20.1.0",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.11",
+    "prettier-eslint": "^11.0.0",
+    "prettier-eslint-cli": "^5.0.0",
+    "sass": "^1.26.10",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.6",
+    "vite": "^1.0.0-beta.3",
+    "vite-plugin-react": "^3.0.0"
+  },
+  "build": {
+    "productName": "demo",
+    "appId": "com.qg.example.electron",
+    "dmg": {
+      "contents": [
+        {
+          "x": 130,
+          "y": 220
+        },
+        {
+          "x": 410,
+          "y": 220,
+          "type": "link",
+          "path": "/Applications"
+        }
+      ]
+    },
+    "win": {
+      "target": [
+        "nsis",
+        "msi"
+      ]
+    },
+    "linux": {
+      "target": [
+        "deb",
+        "rpm",
+        "AppImage"
+      ],
+      "category": "Development"
+    },
+    "directories": {
+      "buildResources": "resources",
+      "output": "release"
+    },
+    "electronDownload": {
+      "mirror": "https://npm.taobao.org/mirrors/electron/"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint-staged"
+    }
+  },
+  "lint-staged": {
+    "**/*.{js,jsx,tsx,ts,less,md,json}": [
+      "prettier-eslint --write",
+      "git add"
+    ],
+    "**/*.{js,jsx,ts,tsx}": "npm run lint-staged:all"
+  }
+}

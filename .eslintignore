@@ -1,0 +1,5 @@
+scripts
+config
+.*
+node_modules
+vite.config.js

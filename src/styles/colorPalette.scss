@@ -1,0 +1,15 @@
+@function colorPalette($baseColors, $variations) {
+  $maxVar: 54;
+  $maxLen: 10;
+  $step: $maxVar / ($maxLen / 2 - 1);
+  @if $variations == 5 {
+    @return $baseColors;
+  } @else if $variations < 5 {
+    $percent: $maxVar - ($step * ($variations - 1));
+
+    @return lighten($baseColors, $percent);
+  } @else {
+    $percent: $step * ($variations - 2) - $maxVar;
+    @return darken($baseColors, $percent);
+  }
+}

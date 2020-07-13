@@ -20,6 +20,8 @@
   },
   "dependencies": {},
   "devDependencies": {
+    "@commitlint/cli": "^9.1.1",
+    "@commitlint/config-conventional": "^9.1.1",
     "@pika/react": "^16.13.1",
     "@pika/react-dom": "^16.13.1",
     "@types/node": "^12.12.50",
@@ -93,7 +95,8 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run lint-staged"
+      "pre-commit": "npm run lint-staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   },
   "lint-staged": {

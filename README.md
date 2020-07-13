@@ -29,3 +29,5 @@ ps: `main.ts` 文件改了需要手动重新执行`npm run start:electron`
 ## 发布版本
 
 > npm run release
+
+ps: 只有在 1.0.0 之后的版本 feat 是 minor,fix 是 patch

@@ -1,6 +1,6 @@
 {
   "name": "electron-vite-react-app",
-  "version": "1.2.3",
+  "version": "1.2.2",
   "author": "tea",
   "description": "测试electron与vite的example",
   "main": "main.js",
@@ -17,7 +17,7 @@
     "lint-staged": "lint-staged",
     "lint-staged:all": "eslint --ext .js,.jsx,.ts,.tsx ./src",
     "prettier": "prettier-eslint --write 'src/**/*'",
-    "release": "rimraf package-lock.json && standard-version && prettier ./CHANGELOG.md git push --follow-tags",
+    "release": "rimraf package-lock.json && standard-version && prettier ./CHANGELOG.md && git push --follow-tags",
     "commit": "git add -A && npx git-cz"
   },
   "dependencies": {},

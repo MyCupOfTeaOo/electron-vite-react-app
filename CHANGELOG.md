@@ -2,16 +2,6 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
-### [0.0.3](https://github.com/MyCupOfTeaOo/electron-vite-react-app/compare/v0.0.1...v0.0.3) (2020-07-13)
-
-### Features
-
-- **readme:** 更新 README ([afe3571](https://github.com/MyCupOfTeaOo/electron-vite-react-app/commit/afe357136e626f50a57094d623a248eba1d9cc86))
-
-### Bug Fixes
-
-- **realease:** 修复发布是因为 package-lock.json 造成无法 commit 的 bug ([f9b340e](https://github.com/MyCupOfTeaOo/electron-vite-react-app/commit/f9b340e4b3e3baf3a6e7b9265c0e1d38ceede23a))
-
 ### 0.0.1 (2020-07-13)
 
 ### Features

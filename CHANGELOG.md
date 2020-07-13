@@ -2,12 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
-### [1.2.1](https://github.com/MyCupOfTeaOo/electron-vite-react-app/compare/v1.2.0...v1.2.1) (2020-07-13)
-
+### [1.2.2](https://github.com/MyCupOfTeaOo/electron-vite-react-app/compare/v1.2.1...v1.2.2) (2020-07-13)
 
 ### Bug Fixes
 
-* 防止changelogmd每次在release后出线变更记录 ([b0162f0](https://github.com/MyCupOfTeaOo/electron-vite-react-app/commit/b0162f0dc4d8c93dfc56e75ce329da91cd76901c))
+- test postchangelog ([b65b35a](https://github.com/MyCupOfTeaOo/electron-vite-react-app/commit/b65b35ad53a4e5d6c625fb169e345be968661a3c))
+
+### [1.2.1](https://github.com/MyCupOfTeaOo/electron-vite-react-app/compare/v1.2.0...v1.2.1) (2020-07-13)
+
+### Bug Fixes
+
+- 防止 changelogmd 每次在 release 后出线变更记录 ([b0162f0](https://github.com/MyCupOfTeaOo/electron-vite-react-app/commit/b0162f0dc4d8c93dfc56e75ce329da91cd76901c))
 
 ## [1.2.0](https://github.com/MyCupOfTeaOo/electron-vite-react-app/compare/v1.1.0...v1.2.0) (2020-07-13)
 

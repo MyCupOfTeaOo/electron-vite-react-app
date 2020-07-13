@@ -17,6 +17,7 @@
     "lint-staged": "lint-staged",
     "lint-staged:all": "eslint --ext .js,.jsx,.ts,.tsx ./src",
     "prettier": "prettier-eslint --write 'src/**/*'",
+    "release": "standard-version",
     "commit": "npx git-cz"
   },
   "dependencies": {},
@@ -33,6 +34,7 @@
     "@typescript-eslint/typescript-estree": "^3.6.0",
     "concurrently": "^5.2.0",
     "cross-env": "^7.0.2",
+    "cz-conventional-changelog": "^3.2.0",
     "electron": "^9.1.0",
     "electron-builder": "^22.7.0",
     "eslint": "^7.4.0",
@@ -50,6 +52,7 @@
     "prettier-eslint": "^11.0.0",
     "prettier-eslint-cli": "^5.0.0",
     "sass": "^1.26.10",
+    "standard-version": "^8.0.1",
     "ts-node": "^8.10.2",
     "typescript": "^3.9.6",
     "vite": "^1.0.0-beta.3",
@@ -57,8 +60,7 @@
   },
   "optionalDependencies": {
     "commitizen": "^4.1.2",
-    "conventional-changelog-cli": "^2.0.34",
-    "cz-conventional-changelog": "^3.2.0"
+    "conventional-changelog-cli": "^2.0.34"
   },
   "build": {
     "productName": "demo",

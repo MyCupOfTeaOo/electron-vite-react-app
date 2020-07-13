@@ -20,3 +20,7 @@ ps: `main.ts` 文件改了需要手动重新执行`npm run start:electron`
 ## 构建
 
 > npm run build
+
+## 提交代码
+
+> 遵循 https://www.conventionalcommits.org/

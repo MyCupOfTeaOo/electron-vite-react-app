@@ -57,7 +57,8 @@
   },
   "optionalDependencies": {
     "commitizen": "^4.1.2",
-    "conventional-changelog-cli": "^2.0.34"
+    "conventional-changelog-cli": "^2.0.34",
+    "cz-conventional-changelog": "^3.2.0"
   },
   "build": {
     "productName": "demo",
@@ -110,5 +111,10 @@
       "git add"
     ],
     "**/*.{js,jsx,ts,tsx}": "npm run lint-staged:all"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }

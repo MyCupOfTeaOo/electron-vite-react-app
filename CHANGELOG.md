@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.2.5](https://github.com/MyCupOfTeaOo/electron-vite-react-app/compare/v1.2.4...v1.2.5) (2020-07-13)
+
+
+### Bug Fixes
+
+* changelog prettier ignore ([41a5dc7](https://github.com/MyCupOfTeaOo/electron-vite-react-app/commit/41a5dc7b4c8211fd7f4532a8da2b97fbfeebe84a))
+
 ### [1.2.4](https://github.com/MyCupOfTeaOo/electron-vite-react-app/compare/v1.2.3...v1.2.4) (2020-07-13)
 
 ### Bug Fixes

@@ -6,8 +6,8 @@
   "main": "main.js",
   "scripts": {
     "start": "concurrently --kill-others \"npm:start:vite\" \"npm:watch:main\"",
-    "start:vite": "vite",
     "start:electron": "cross-env NODE_ENV=development electron .",
+    "start:vite": "vite",
     "watch:main": "tsc ./main.ts --watch",
     "build:vite": "vite build --base=",
     "build:electron": "cross-env NODE_ENV=production tsc ./main.ts && electron-builder",

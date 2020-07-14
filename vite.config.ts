@@ -27,21 +27,6 @@ const config: UserConfig = {
         }
       },
     },
-    // antd
-    {
-      alias(id) {
-        if (/^@ant-design\/icons\/(?!\/es)/.test(id)) {
-          return id.replace('@ant-design/icons', '@ant-design/icons/es/icons');
-        }
-      },
-    },
-    {
-      alias(id) {
-        if (/^@ant-design\/colors/.test(id)) {
-          return id.replace('@ant-design/colors', '/fix/@ant-design/colors');
-        }
-      },
-    },
     {
       alias(id) {
         if (/^lodash($|\/)/.test(id)) {
@@ -51,16 +36,10 @@ const config: UserConfig = {
     },
   ],
   alias: {
-    // @material-ui
-    'react-is': '/fix/react-is/',
-    '@babel/runtime/regenerator': '/fix/regenerator/',
-    // classnames
-    classnames: '/fix/classnames/',
-    'insert-css': '/fix/insert-css/',
-    tinycolor2: '/fix/tinycolor2',
-    raf: '/fix/raf',
-    shallowequal: '/fix/shallowequal',
     'hoist-non-react-statics': 'hoist-non-react-statics/src',
+  },
+  optimizeDeps: {
+    include: ['antd', '@material-ui', 'classnames', 'teaness'],
   },
   cssPreprocessOptions: {
     javascriptEnabled: true,

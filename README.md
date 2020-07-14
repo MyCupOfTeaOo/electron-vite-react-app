@@ -1,7 +1,6 @@
-demo 性质,感觉 vite 还是不能上生产环境,社区对 esm 支持没有想象中的好,为了可以跑起来做了很多 fix 工作
-而且 vite 首页打开也会慢一点,感觉在构建上浪费一点时间还好
+demo 性质,测试 vite electron commitlint...
 
-> :warning: 跑不起来了 加了依赖后需要 fix 太多,fix 不动了
+> :warning: 暂时跑不起来了
 
 # 样板项目
 

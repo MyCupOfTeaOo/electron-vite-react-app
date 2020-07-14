@@ -18,7 +18,7 @@
     "lint-staged": "lint-staged",
     "lint-staged:all": "eslint --ext .js,.jsx,.ts,.tsx ./src",
     "prettier": "prettier-eslint --write 'src/**/*'",
-    "release": "rimraf package-lock.json && standard-version && git push --follow-tags",
+    "release": "rimraf package-lock.json && standard-version -a && git push --follow-tags",
     "commit": "git add -A && npx git-cz"
   },
   "dependencies": {},

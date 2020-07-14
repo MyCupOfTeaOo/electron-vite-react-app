@@ -49,25 +49,6 @@ declare module 'mobx-react' {
   ): <A = unknown>(component: React.ComponentType<A & T>) => any;
 }
 
-declare module 'querystring' {
-  export function stringify(
-    obj?: {
-      [key: string]:
-        | string
-        | number
-        | boolean
-        | string[]
-        | number[]
-        | boolean[]
-        | undefined
-        | null;
-    },
-    sep?: string,
-    eq?: string,
-    options?: StringifyOptions,
-  ): string;
-}
-
 export type RecordObj<T extends { [key: string]: any }, X> = {
   [P in keyof T]: X;
 };

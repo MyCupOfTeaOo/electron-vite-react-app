@@ -2,19 +2,23 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
-## [1.3.0](https://github.com/MyCupOfTeaOo/electron-vite-react-app/compare/v1.2.5...v1.3.0) (2020-07-14)
-
-
-### Features
-
-* 增加nodemon自动重启 ([b4847f3](https://github.com/MyCupOfTeaOo/electron-vite-react-app/commit/b4847f320173bdace913a87e9bee258104cc194a))
-
-### [1.2.5](https://github.com/MyCupOfTeaOo/electron-vite-react-app/compare/v1.2.4...v1.2.5) (2020-07-13)
-
+### [1.3.1](https://github.com/MyCupOfTeaOo/electron-vite-react-app/compare/v1.3.0...v1.3.1) (2020-07-14)
 
 ### Bug Fixes
 
-* changelog prettier ignore ([41a5dc7](https://github.com/MyCupOfTeaOo/electron-vite-react-app/commit/41a5dc7b4c8211fd7f4532a8da2b97fbfeebe84a))
+- 测试 changelog ([087e313](https://github.com/MyCupOfTeaOo/electron-vite-react-app/commit/087e3139ef2b1206d14a118aedaee816cb03aea1))
+
+## [1.3.0](https://github.com/MyCupOfTeaOo/electron-vite-react-app/compare/v1.2.5...v1.3.0) (2020-07-14)
+
+### Features
+
+- 增加 nodemon 自动重启 ([b4847f3](https://github.com/MyCupOfTeaOo/electron-vite-react-app/commit/b4847f320173bdace913a87e9bee258104cc194a))
+
+### [1.2.5](https://github.com/MyCupOfTeaOo/electron-vite-react-app/compare/v1.2.4...v1.2.5) (2020-07-13)
+
+### Bug Fixes
+
+- changelog prettier ignore ([41a5dc7](https://github.com/MyCupOfTeaOo/electron-vite-react-app/commit/41a5dc7b4c8211fd7f4532a8da2b97fbfeebe84a))
 
 ### [1.2.4](https://github.com/MyCupOfTeaOo/electron-vite-react-app/compare/v1.2.3...v1.2.4) (2020-07-13)
 

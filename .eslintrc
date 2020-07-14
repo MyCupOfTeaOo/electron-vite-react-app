@@ -27,12 +27,14 @@
     "react/forbid-prop-types": 0,
     "react/jsx-one-expression-per-line": 0,
     "react/sort-comp": 0,
+    "react/jsx-props-no-spreading": 0,
     "generator-star-spacing": 0,
     "function-paren-newline": 0,
     "import/no-unresolved": [
       1,
       { "ignore": ["^@/", "^umi/", "^#/", "react", "react-dom"] }
     ],
+    "import/extensions": [2, "never"],
     "import/no-extraneous-dependencies": 0,
     "jsx-a11y/no-noninteractive-element-interactions": 0,
     "jsx-a11y/click-events-have-key-events": 0,
@@ -62,6 +64,7 @@
     // Too restrictive: https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/destructuring-assignment.md
     "react/destructuring-assignment": "off",
     "react/jsx-filename-extension": "off",
+    "react/state-in-constructor": 0,
     "max-len": "warn",
     "sort-imports": 0,
     // Use function hoisting to improve code readability
@@ -77,6 +80,8 @@
     "@typescript-eslint/triple-slash-reference": 0,
     "@typescript-eslint/camelcase": "off",
     "@typescript-eslint/no-var-requires": 0,
+    "@typescript-eslint/explicit-module-boundary-types": 0,
+    "@typescript-eslint/ban-types": 0,
     "@typescript-eslint/no-use-before-define": [
       "warn",
       {

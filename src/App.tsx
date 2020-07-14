@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
+import { createBrowserHistory } from 'history';
+import { Router } from 'react-router-dom';
 import logo from './logo.svg';
 import './App.scss';
+
+const history = createBrowserHistory();
 
 const App: React.FC<any> = () => {
   const [count, setCount] = useState(0);
@@ -30,8 +34,11 @@ const App: React.FC<any> = () => {
           Learn React
         </a>
       </main>
+      <Router history={history} />
     </div>
   );
 };
+
+export { history };
 
 export default App;

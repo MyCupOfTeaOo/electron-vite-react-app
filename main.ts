@@ -9,14 +9,18 @@ const createWindow = () => {
     webPreferences: {
       nodeIntegration: true,
     },
+    backgroundColor: '#282c34',
+    show: false,
   });
   if (process.env.NODE_ENV === 'development') {
     mainWindow.loadURL('http://localhost:3000');
-    // 打开开发者工具
-    mainWindow.webContents.openDevTools();
   } else {
     mainWindow.loadFile(path.join(__dirname, './dist/index.html'));
   }
+  mainWindow.maximize();
+  mainWindow.once('ready-to-show', () => {
+    mainWindow.show();
+  });
 };
 
 // This method will be called when Electron has finished

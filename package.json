@@ -1,13 +1,13 @@
 {
   "name": "electron-vite-react-app",
-  "version": "0.0.1",
+  "version": "1.2.5",
   "author": "tea",
   "description": "测试electron与vite的example",
   "main": "main.js",
   "scripts": {
     "start": "concurrently --kill-others \"npm:start:vite\" \"npm:watch:main\" \"npm:watch:electron\"",
-    "start:vite": "vite",
     "start:electron": "cross-env NODE_ENV=development electron .",
+    "start:vite": "vite",
     "watch:main": "tsc ./main.ts --watch",
     "watch:electron": "nodemon --exec \"npm run start:electron\"",
     "build:vite": "vite build --base=",
@@ -17,10 +17,14 @@
     "lint:fix": "eslint --fix --ext .js,.jsx,.ts,.tsx ./src",
     "lint-staged": "lint-staged",
     "lint-staged:all": "eslint --ext .js,.jsx,.ts,.tsx ./src",
-    "prettier": "prettier-eslint --write 'src/**/*'"
+    "prettier": "prettier-eslint --write 'src/**/*'",
+    "release": "rimraf package-lock.json && standard-version && git push --follow-tags",
+    "commit": "git add -A && npx git-cz"
   },
   "dependencies": {},
   "devDependencies": {
+    "@commitlint/cli": "^9.1.1",
+    "@commitlint/config-conventional": "^9.1.1",
     "@pika/react": "^16.13.1",
     "@pika/react-dom": "^16.13.1",
     "@types/node": "^12.12.50",
@@ -31,6 +35,7 @@
     "@typescript-eslint/typescript-estree": "^3.6.0",
     "concurrently": "^5.2.0",
     "cross-env": "^7.0.2",
+    "cz-conventional-changelog": "^3.2.0",
     "electron": "^9.1.0",
     "electron-builder": "^22.7.0",
     "eslint": "^7.4.0",
@@ -48,11 +53,17 @@
     "nodemon": "^2.0.4",
     "prettier-eslint": "^11.0.0",
     "prettier-eslint-cli": "^5.0.0",
+    "rimraf": "^3.0.2",
     "sass": "^1.26.10",
+    "standard-version": "^8.0.1",
     "ts-node": "^8.10.2",
     "typescript": "^3.9.6",
     "vite": "^1.0.0-beta.3",
     "vite-plugin-react": "^3.0.0"
+  },
+  "optionalDependencies": {
+    "commitizen": "^4.1.2",
+    "conventional-changelog-cli": "^2.0.34"
   },
   "build": {
     "productName": "demo",
@@ -95,7 +106,8 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run lint-staged"
+      "pre-commit": "npm run lint-staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   },
   "lint-staged": {
@@ -104,5 +116,10 @@
       "git add"
     ],
     "**/*.{js,jsx,ts,tsx}": "npm run lint-staged:all"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }

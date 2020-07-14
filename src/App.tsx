@@ -6,7 +6,8 @@ const App: React.FC<any> = () => {
   const [count, setCount] = useState(0);
   return (
     <div className="App">
-      <header className="App-header">
+      <header className="header" />
+      <main className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>Hello Electron+Vite + React!</p>
         <p>
@@ -28,7 +29,7 @@ const App: React.FC<any> = () => {
         >
           Learn React
         </a>
-      </header>
+      </main>
     </div>
   );
 };

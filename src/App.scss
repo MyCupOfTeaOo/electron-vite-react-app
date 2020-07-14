@@ -1,7 +1,13 @@
 @import 'src/styles/global.scss';
-
+$back: rgba(
+  $color: #282c34,
+  $alpha: 1,
+);
 .App {
+  position: relative;
   text-align: center;
+  height: 100%;
+  overflow: hidden;
 }
 
 .App-logo {
@@ -15,15 +21,24 @@
   }
 }
 
+.header {
+  user-select: none;
+  -webkit-app-region: drag;
+  width: 100%;
+  padding: $padding;
+  position: absolute;
+  opacity: 1;
+}
+
 .App-header {
-  background-color: #282c34;
+  background-color: $back;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #fff;
 }
 
 .App-link {

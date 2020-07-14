@@ -5,19 +5,24 @@ const createWindow = () => {
   // Create the browser window.
   const mainWindow = new BrowserWindow({
     height: 600,
-    width: 800,
+    width: 400,
     webPreferences: {
       nodeIntegration: true,
     },
-    backgroundColor: '#282c34',
+    titleBarStyle: 'hidden',
+    resizable: false,
+    frame: false,
     show: false,
+    alwaysOnTop: true,
+    transparent: true,
+    hasShadow: true,
+    vibrancy: 'ultra-dark',
   });
   if (process.env.NODE_ENV === 'development') {
     mainWindow.loadURL('http://localhost:3000');
   } else {
     mainWindow.loadFile(path.join(__dirname, './dist/index.html'));
   }
-  mainWindow.maximize();
   mainWindow.once('ready-to-show', () => {
     mainWindow.show();
   });
